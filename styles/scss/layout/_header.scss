@@ -1,0 +1,30 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  &-bg {
+    background-color: #fff;
+  }
+
+  &-brand {
+    a {
+      display: block;
+    }
+
+    &-img {
+      max-height: 120px;
+      min-height: 100px;
+      width: auto;
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
