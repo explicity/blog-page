@@ -36,9 +36,10 @@
     grid-column: 1/2;
     grid-row: 1/4;
     align-self: center;
+    width: max-content;
 
     a {
-      display: block;
+      display: inline-block;
     }
 
     &-img {

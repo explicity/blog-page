@@ -34,9 +34,10 @@
   grid-column: 1/2;
   grid-row: 1/4;
   align-self: center;
+  width: max-content;
 }
 .navbar-brand a {
-  display: block;
+  display: inline-block;
 }
 .navbar-brand-img {
   max-height: 120px;
