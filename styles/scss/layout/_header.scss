@@ -1,0 +1,233 @@
+.bg-style {
+  width: 100vw;
+  height: 50px;
+  background-color: #fff1e2;
+  z-index: 0;
+}
+
+.navbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+  align-self: center;
+  padding: 1rem 2rem;
+
+  .bg-style {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  &-bg {
+    background-color: #fff;
+  }
+
+  &-nav {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: end;
+  }
+
+  &-brand {
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    align-self: center;
+    width: max-content;
+
+    a {
+      display: inline-block;
+    }
+
+    &-img {
+      max-height: 120px;
+      min-height: 100px;
+      width: auto;
+      background-size: contain;
+      border-radius: 50%;
+      border: 3px solid #fff1e2;
+    }
+  }
+
+  &-media {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-item {
+      display: inline-block;
+
+      &:last-child {
+        margin-right: 10px;
+      }
+    }
+
+    .fab,
+    .fas {
+      color: #fff;
+    }
+  }
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  border-width: 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  &:hover {
+    animation: animation-bounce 0.3s forwards;
+  }
+
+  &-facebook {
+    background-color: #3e68c0;
+    margin-left: -1px;
+  }
+
+  &-twitter {
+    background-color: #23abff;
+  }
+
+  &-instagram {
+    background-color: #222;
+    background-image: radial-gradient(
+        circle farthest-corner at 35% 90%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle farthest-corner at 0 140%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 0 -25%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 20% -50%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 0,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 60% -20%,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 100%,
+        #d9317a,
+        transparent
+      ),
+      linear-gradient(
+        #6559ca,
+        #bc318f 30%,
+        #e33f5f 50%,
+        #f77638 70%,
+        #fec66d 100%
+      );
+  }
+
+  &-youtube {
+    background-color: #ee3130;
+  }
+
+  &-search {
+    background-color: #232525;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-rows: auto auto;
+
+    .bg-style {
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+
+    &-brand {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: center;
+    }
+
+    &-nav {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 2;
+      margin-left: 40px;
+      justify-self: center;
+    }
+
+    &-media {
+      grid-column: 2/3;
+      grid-row: 2;
+      justify-self: center;
+      width: max-content;
+      margin-right: 40px;
+
+      .social-icon {
+        background-color: transparent;
+
+        .fas {
+          color: #232525;
+        }
+
+        &:hover {
+          animation: none;
+          transition: 0.2s;
+
+          .fas {
+            color: #a3080c;
+          }
+        }
+      }
+
+      .nav-item:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    &-media {
+      .nav-item {
+        &:first-child {
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animation-bounce {
+  40% {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+
+  70% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}

@@ -1,10 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Blog Page</title>
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <script src="https://kit.fontawesome.com/1eaf341131.js"></script>
   </head>
   <body>
+    <header class="navbar navbar-bg">
+    <span class="bg-style"></span>
+      <h1 class="navbar-brand">
+        <a href="#">
+          <img
+            src="images/header-brand.jpg"
+            alt="navbar-brand"
+            class="navbar-brand-img"
+          />
+        </a>
+      </h1>
+      <div class="navbar-nav">
+        <input id="main-menu-checkbox" type="checkbox" />
+        <label for="main-menu-checkbox" class="social-icon menu-toggle">
+          <span class="sr-only">Open menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </label>
+        <nav
+          role="navigation"
+          class="main-menu"
+          aria-expanded="false"
+          aria-label="Main menu"
+        >
+          <label for="main-menu-checkbox" class="menu-close">
+            <span class="sr-only">Close menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </label>
+
+          <ul>
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <label
+          for="main-menu-checkbox"
+          class="backdrop"
+          tabindex="-1"
+          aria-hidden="true"
+          hidden
+        ></label>
+      </div>
+      <ul class="navbar-media">
+            <li class="nav-item">
+              <button class="social-icon social-icon-search">
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="social-icon social-icon-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="social-icon social-icon-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="social-icon social-icon-instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="social-icon social-icon-youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+    </header>
   </body>
 </html>
