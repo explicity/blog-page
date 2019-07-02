@@ -21,42 +21,71 @@
           />
         </a>
       </h1>
-      <input id="main-menu-checkbox" type="checkbox" />
-      <label for="main-menu-checkbox" class="menu-toggle">
-        <span class="sr-only">Open menu</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
-      </label>
-      <nav
-        role="navigation"
-        class="main-menu"
-        aria-expanded="false"
-        aria-label="Main menu"
-      >
-        <label for="main-menu-checkbox" class="menu-close">
-          <span class="sr-only">Close menu</span>
-          <span class="fa fa-close" aria-hidden="true"></span>
-        </label>
-
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a>
-            <span class="sr-only">(current)</span>
+      <div>
+        <ul class="navbar-media">
+          <li class="nav-item">
+            <button class="social-icon social-icon-search">
+              <i class="fas fa-search"></i>
+            </button>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#" class="social-icon social-icon-facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us</a>
+            <a href="#" class="social-icon social-icon-twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="social-icon social-icon-instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="social-icon social-icon-youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
           </li>
         </ul>
-      </nav>
-      <label
-        for="main-menu-checkbox"
-        class="backdrop"
-        tabindex="-1"
-        aria-hidden="true"
-        hidden
-      ></label>
+        <input id="main-menu-checkbox" type="checkbox" />
+        <label for="main-menu-checkbox" class="menu-toggle">
+          <span class="sr-only">Open menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </label>
+        <nav
+          role="navigation"
+          class="main-menu"
+          aria-expanded="false"
+          aria-label="Main menu"
+        >
+          <label for="main-menu-checkbox" class="menu-close">
+            <span class="sr-only">Close menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </label>
+
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <label
+          for="main-menu-checkbox"
+          class="backdrop"
+          tabindex="-1"
+          aria-hidden="true"
+          hidden
+        ></label>
+      </div>
     </header>
   </body>
 </html>

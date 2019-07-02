@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
 
   &-bg {
     background-color: #fff;
@@ -21,10 +21,122 @@
       background-size: contain;
     }
   }
+
+  &-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+    .nav-item {
+      &:first-child {
+        margin-right: 38px;
+      }
+      &:last-child {
+        padding-right: 12px;
+      }
+    }
+
+    .fab,
+    .fas {
+      color: #fff;
+    }
+  }
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+  border-width: 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  &:hover {
+    animation: animation-bounce 0.3s forwards;
+  }
+
+  &-facebook {
+    background-color: #3e68c0;
+    margin-left: -1px;
+  }
+
+  &-twitter {
+    background-color: #23abff;
+  }
+
+  &-instagram {
+    background-color: #222;
+    background-image: radial-gradient(
+        circle farthest-corner at 35% 90%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle farthest-corner at 0 140%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 0 -25%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 20% -50%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 0,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 60% -20%,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 100%,
+        #d9317a,
+        transparent
+      ),
+      linear-gradient(
+        #6559ca,
+        #bc318f 30%,
+        #e33f5f 50%,
+        #f77638 70%,
+        #fec66d 100%
+      );
+  }
+
+  &-youtube {
+    background-color: #ee3130;
+  }
+
+  &-search {
+    background-color: #232525;
+  }
 }
 
 @media (max-width: 430px) {
   .navbar {
     flex-direction: column;
+  }
+}
+
+@keyframes animation-bounce {
+  40% {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+
+  70% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
