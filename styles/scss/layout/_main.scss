@@ -1,7 +1,130 @@
 .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.entry {
+  &-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+
+  .card {
+    margin: 10px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+
+    .card-info-hover {
+      opacity: 1;
+    }
+
+    .card-img {
+      transform: scale(1.2);
+      opacity: 0.4;
+    }
+  }
+
+  &-img {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  &-img-container {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-info {
+    padding: 16px 24px 24px 24px;
+
+    .card-category {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: #868686;
+    }
+
+    .card-title {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .card-secondary {
+      font-size: 12px;
+      font-weight: 600;
+      color: #a3080c;
+    }
+
+    &-hover {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      opacity: 0;
+      padding: 16px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #a3080c;
+      font-size: 12px;
+
+      .fa {
+        color: #a3080c;
+      }
+    }
+  }
+
+  &-text {
+    display: -webkit-box;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 15px;
+    max-height: 45px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &--1 {
+    .card-img {
+      background-image: url("https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    }
+  }
 }
