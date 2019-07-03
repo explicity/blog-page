@@ -21,11 +21,14 @@
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 400px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  margin-bottom: 20px;
 
   .card {
-    margin: 10px;
+    justify-self: center;
   }
 }
 
@@ -36,6 +39,9 @@
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  min-width: 200px;
+  max-width: 250px;
+  grid-area: auto;
 
   &:hover,
   &:focus {
@@ -48,7 +54,7 @@
 
     .card-img {
       transform: scale(1.2);
-      opacity: 0.4;
+      opacity: 0.3;
     }
   }
 
@@ -123,8 +129,36 @@
   }
 
   &--1 {
-    .card-img {
-      background-image: url("https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-    }
+    @include bg-img(
+      "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/best_and_worst_salads_for_your_health_slideshow/650x350_best_and_worst_salads_for_your_health_slideshow.jpg"
+    );
+  }
+
+  &--2 {
+    @include bg-img(
+      "https://d1doqjmisr497k.cloudfront.net//-/media/franksus18/recipe-images/franks_redhot_bacon_cheeseburger_300x300.jpg"
+    );
+  }
+
+  &--3 {
+    @include bg-img(
+      "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/275e9c3a8e8f44d69b7a91665558de1b/BFV14782_Cauliflower_Bites_4_Ways_FB1080SQ.jpg"
+    );
+  }
+
+  &--4 {
+    @include bg-img("https://img.taste.com.au/ol2Jq8ZQ/taste/2016/11/rachel-87711-2.jpeg");
+  }
+
+  &--5 {
+    @include bg-img("https://www.diabetessa.org.za/wp-content/uploads/2017/10/vanilla-icecream.jpg");
+  }
+
+  &--6 {
+    @include bg-img("https://www.canterburycoffee.com/wp-content/uploads/2015/08/coffee-school-types-of-beveages.jpg");
+  }
+  
+  &--7 {
+    @include bg-img("https://storage.googleapis.com/gen-atmedia/3/2018/08/21da8fc3181c262c1fa394d43fd084789e585eb3.jpeg");
   }
 }

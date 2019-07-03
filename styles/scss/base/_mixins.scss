@@ -1,0 +1,5 @@
+@mixin bg-img($img-url) {
+  .card-img {
+    background-image: url($img-url);
+  }
+}
