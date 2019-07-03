@@ -47,24 +47,24 @@
   border-radius: 50%;
   border: 3px solid #fff1e2;
 }
-.navbar-media {
+
+.social-media {
   grid-column: 3/4;
   grid-row: 1/2;
   align-self: center;
   display: flex;
   justify-content: flex-end;
 }
-.navbar-media .nav-item {
+.social-media .nav-item {
   display: inline-block;
 }
-.navbar-media .nav-item:last-child {
+.social-media .nav-item:last-child {
   margin-right: 10px;
 }
-.navbar-media .fab,
-.navbar-media .fas {
+.social-media .fab,
+.social-media .fas {
   color: #fff;
 }
-
 .social-icon {
   width: 32px;
   height: 32px;
@@ -117,32 +117,33 @@
     margin-left: 40px;
     justify-self: center;
   }
-  .navbar-media {
+
+  .social-media {
     grid-column: 2/3;
     grid-row: 2;
     justify-self: center;
     width: max-content;
     margin-right: 40px;
   }
-  .navbar-media .social-icon {
+  .social-media .social-icon {
     background-color: transparent;
   }
-  .navbar-media .social-icon .fas {
+  .social-media .social-icon .fas {
     color: #232525;
   }
-  .navbar-media .social-icon:hover {
+  .social-media .social-icon:hover {
     animation: none;
     transition: 0.2s;
   }
-  .navbar-media .social-icon:hover .fas {
+  .social-media .social-icon:hover .fas {
     color: #a3080c;
   }
-  .navbar-media .nav-item:not(:first-child) {
+  .social-media .nav-item:not(:first-child) {
     display: none;
   }
 }
 @media (min-width: 769px) {
-  .navbar-media .nav-item:first-child {
+  .navbar .social-media .nav-item:first-child {
     margin-right: 22px;
   }
 }
@@ -419,6 +420,7 @@
   max-height: 45px;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  margin-top: 8px;
 }
 .card--1 .card-img {
   background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/best_and_worst_salads_for_your_health_slideshow/650x350_best_and_worst_salads_for_your_health_slideshow.jpg");
@@ -440,6 +442,41 @@
 }
 .card--7 .card-img {
   background-image: url("https://storage.googleapis.com/gen-atmedia/3/2018/08/21da8fc3181c262c1fa394d43fd084789e585eb3.jpeg");
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.content-main {
+  flex-grow: 1;
+}
+.content-secondary {
+  border: 2px solid #f5d4b7;
+}
+.content-secondary .social-media {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-section {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.author-img {
+  height: 120px;
+  width: auto;
+  transform: translate3d(0, -50%, 0);
+  border-radius: 50%;
+  border: 3px solid #f5d4b7;
+}
+.author-content {
+  margin-top: -60px;
+  padding: 5px 10px;
 }
 
 * {
@@ -479,7 +516,7 @@ ul {
 }
 
 p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h1,
