@@ -389,6 +389,7 @@
 .card-info .card-title {
   font-size: 23px;
   font-weight: bold;
+  line-height: 26px;
 }
 .card-info .card-secondary {
   font-size: 12px;
@@ -604,6 +605,65 @@
   background-color: #f5d4b7;
   padding: 10px;
   font-size: 15px;
+}
+
+.tag-cloud ul {
+  margin: 15px;
+}
+.tag-cloud .tag {
+  display: inline-block;
+  margin: 0 0 0.3em 1em;
+  padding: 0;
+}
+.tag-cloud .tag a {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 1em;
+  background-color: #a3080c;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  font-size: 13px;
+  transition: 0.2s;
+}
+.tag-cloud .tag a:before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-color: transparent #a3080c transparent transparent;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  transition: 0.2s;
+}
+.tag-cloud .tag a:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.tag-cloud .tag a:hover, .tag-cloud .tag a:focus {
+  background-color: #cf3b40;
+}
+.tag-cloud .tag a:hover:before, .tag-cloud .tag a:focus:before {
+  border-right-color: #cf3b40;
+}
+.tag-cloud .tag span {
+  display: block;
+  max-width: 60px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 * {
