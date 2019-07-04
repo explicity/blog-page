@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff1e2;
+  background-color: hsl(31, 100%, 94%);
   position: relative;
 
   .logo-wrap {
@@ -22,8 +22,12 @@ footer {
 }
 
 .footer {
+  &-wrap {
+    padding: 40px 0;
+  }
+
   &-content {
-    padding: 0 32px;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 17px;
 
@@ -50,7 +54,9 @@ footer {
   }
 
   &-layout {
-    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
     display: grid;
     grid-template-columns: 50% 25% 25%;
   }
@@ -61,6 +67,26 @@ footer {
     padding-bottom: 10px;
     border-bottom: 2px solid hsla(0, 0%, 84%, 0.8);
     font-size: 17px;
+  }
+}
+
+.bottom-bar {
+  padding: 10px 0;
+  text-align: center;
+
+  &-layout {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .copyright {
+    font-size: 13px;
   }
 }
 
