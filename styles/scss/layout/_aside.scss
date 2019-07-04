@@ -11,7 +11,7 @@
 
   &-secondary {
     padding-left: 10px;
-    max-width: 300px;
+    max-width: 400px;
 
     .social-media {
       justify-content: center;
@@ -265,6 +265,7 @@
 
   .content-secondary {
     padding-left: 0;
+    justify-self: center;
 
     .profile-section {
       position: absolute;

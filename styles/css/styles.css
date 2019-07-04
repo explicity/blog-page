@@ -455,7 +455,7 @@
 }
 .content-secondary {
   padding-left: 10px;
-  max-width: 300px;
+  max-width: 400px;
 }
 .content-secondary .social-media {
   justify-content: center;
@@ -671,6 +671,7 @@
 
   .content-secondary {
     padding-left: 0;
+    justify-self: center;
   }
   .content-secondary .profile-section {
     position: absolute;
@@ -745,6 +746,60 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+footer {
+  background-color: #fff1e2;
+  position: relative;
+}
+footer .logo-wrap {
+  align-self: center;
+}
+footer .logo-wrap a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 22px;
+  line-height: 30px;
+  transition: 0.2s;
+}
+footer .logo-wrap a:hover {
+  color: #a3080c;
+}
+
+.footer-content {
+  padding: 0 32px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-content-info {
+  word-wrap: break-word;
+}
+.footer-content-info span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.footer-content-info:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-img {
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.footer-layout {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+.footer-nav-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(214, 214, 214, 0.8);
+  font-size: 17px;
 }
 
 * {
