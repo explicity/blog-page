@@ -114,7 +114,7 @@
     display: flex;
     grid-column: 2/3;
     grid-row: 2;
-    margin-left: 40px;
+    margin-right: 40px;
     justify-self: center;
   }
   .navbar .social-media {
@@ -122,7 +122,7 @@
     grid-row: 2;
     justify-self: center;
     width: max-content;
-    margin-right: 40px;
+    margin-left: 40px;
   }
   .navbar .social-media .social-icon {
     background-color: transparent;
@@ -223,6 +223,15 @@
   top: 0;
   cursor: pointer;
 }
+.main-menu-search {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  color: white;
+  background-color: gray;
+}
 
 #main-menu-checkbox:focus ~ .menu-close {
   background: #333;
@@ -260,6 +269,10 @@
   background: #000;
   background: rgba(0, 0, 0, 0.85);
   cursor: default;
+}
+
+#main-menu-checkbox:checked ~ .main-menu-search {
+  display: block;
 }
 
 @supports (position: fixed) {
