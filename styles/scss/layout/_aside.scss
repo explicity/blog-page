@@ -10,7 +10,9 @@
   }
 
   &-secondary {
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
     max-width: 400px;
 
     .social-media {
@@ -21,6 +23,8 @@
 }
 
 .profile-section {
+  height: fit-content;
+  display: block;
   position: relative;
   border-radius: 12px;
   margin-top: 60px;
@@ -273,7 +277,7 @@
       left: 50%; 
       transform: translateX(-50%);
       width: 100%;
-      max-width: 300px; 
+      max-width: 300px;
     }
   }
 
