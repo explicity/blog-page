@@ -96,7 +96,7 @@
     .card-secondary {
       font-size: 12px;
       font-weight: 600;
-      color: #a3080c;
+      color: $red;
     }
 
     &-hover {
@@ -109,11 +109,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #a3080c;
+      color: $red;
       font-size: 12px;
 
       .fa {
-        color: #a3080c;
+        color: $red;
       }
     }
   }

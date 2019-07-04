@@ -10,16 +10,16 @@
 }
 
 .menu-toggle {
-  color: #232525;
+  color: $color-primary;
 
   &:hover {
     transition: 0.2s;
-    color: #a3080c;
+    color: $red;
   }
 }
 
 #main-menu-checkbox:focus ~ .menu-toggle {
-  color: #a3080c;
+  color: $red;
 }
 
 #main-menu-checkbox {
@@ -76,8 +76,8 @@
     top: 0;
     right: 0;
     z-index: 1001;
-    color: white;
-    background-color: gray;
+    color: #fff;
+    background-color: #808080;
   }
 }
 
@@ -156,7 +156,7 @@
   }
 
   .main-menu .nav-link {
-    color: #232525;
+    color: $color-primary;
     letter-spacing: 0.5px;
     font-size: 11px;
     font-weight: 600;
@@ -165,7 +165,7 @@
 
     &:hover,
     &:focus {
-      color: #a3080c;
+      color: $red;
       transition: 0.2s;
       background: transparent;
     }

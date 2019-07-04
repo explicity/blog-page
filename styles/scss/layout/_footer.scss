@@ -1,5 +1,5 @@
 footer {
-  background-color: hsl(31, 100%, 94%);
+  background-color: $light-tan;
   position: relative;
 
   .logo-wrap {
@@ -15,7 +15,7 @@ footer {
       transition: 0.2s;
 
       &:hover {
-        color: #a3080c;
+        color: $red;
       }
     }
   }
