@@ -10,9 +10,12 @@
   }
 
   &-secondary {
+    padding-left: 10px;
+    max-width: 300px;
+
     .social-media {
       justify-content: center;
-      margin: 15px 20px;
+      margin: 15px 5px;
     }
   }
 }
@@ -225,8 +228,10 @@
     color: #232525;
     font-weight: bold;
     font-size: 16px;
-    line-height: 17px;
+    line-height: 18px;
     transition: 0.2s;
+    display: block;
+    margin-bottom: 2px;
 
     &:hover {
       color: #a3080c;
@@ -249,5 +254,29 @@
 .comments {
   .comment-item:not(:last-child) {
     border-bottom: 1px solid #f5d4b7;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-layout {
+    grid-template-columns: auto;
+    position: relative;
+  }
+
+  .content-secondary {
+    padding-left: 0;
+
+    .profile-section {
+      position: absolute;
+      top: 0;
+      left: 50%; 
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 300px; 
+    }
+  }
+
+  .content-main {
+    margin-top: 260px;
   }
 }

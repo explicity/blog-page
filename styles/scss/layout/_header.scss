@@ -177,34 +177,34 @@
       margin-left: 40px;
       justify-self: center;
     }
-  }
 
-  .social-media {
-    grid-column: 2/3;
-    grid-row: 2;
-    justify-self: center;
-    width: max-content;
-    margin-right: 40px;
+    .social-media {
+      grid-column: 2/3;
+      grid-row: 2;
+      justify-self: center;
+      width: max-content;
+      margin-right: 40px;
 
-    .social-icon {
-      background-color: transparent;
-
-      .fas {
-        color: #232525;
-      }
-
-      &:hover {
-        animation: none;
-        transition: 0.2s;
+      .social-icon {
+        background-color: transparent;
 
         .fas {
-          color: #a3080c;
+          color: #232525;
+        }
+
+        &:hover {
+          animation: none;
+          transition: 0.2s;
+
+          .fas {
+            color: #a3080c;
+          }
         }
       }
-    }
 
-    .nav-item:not(:first-child) {
-      display: none;
+      .nav-item:not(:first-child) {
+        display: none;
+      }
     }
   }
 }
